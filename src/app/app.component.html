@@ -2,3 +2,15 @@
 <p>
   Start editing to see some magic happen :)
 </p>
+
+
+
+<input type="text" [(ngModel)]="a">
+<input type="text" [(ngModel)]="b">
+<button (click)="JALAN(a,b)">Input</button>
+
+<div *ngFor="let row of items">
+<a *ngFor="let a of row">{{a}}</a>
+        
+  <br />
+</div>
