@@ -32,7 +32,45 @@ JALAN(a,b) {
 
       for (var i = 0; i < 5; i++) {
         for (var j = 0; j < 5; j++) {
-          console.log("tes");
+          if(this.items[i][j]==this.inp){
+              cek +=1;
+              if(cek == 4){
+                alert('Winner: User '+this.inp);
+                  this.items = [
+    ["*","*","*","*","*"],
+    ["*","*","*","*","*"],
+    ["*","*","*","*","*"],
+    ["*","*","*","*","*"],
+    ["*","*","*","*","*"]
+  ];
+              }
+              console.log(cek);
+            } else{
+              cek =0;
+              console.log(cek);
+            }
+        }
+      }
+
+      for (var i = 0; i < 5; i++) {
+        for (var j = 0; j < 5; j++) {
+          if(this.items[j][i]==this.inp){
+              cek +=1;
+              if(cek == 4){
+                alert('Winner: User '+this.inp);
+                                  this.items = [
+    ["*","*","*","*","*"],
+    ["*","*","*","*","*"],
+    ["*","*","*","*","*"],
+    ["*","*","*","*","*"],
+    ["*","*","*","*","*"]
+  ];
+              }
+              console.log(cek);
+            } else{
+              cek =0;
+              console.log(cek);
+            }
         }
       }
 
